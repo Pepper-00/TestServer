@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "ChatProto";
+
+service ChatService {
+  rpc SendMessage (ChatMessage) returns (ChatResponse);
+}
+
+message ChatMessage {
+  string user = 1;
+  string message = 2;
+}
+
+message ChatResponse {
+  string response = 1;
+}
