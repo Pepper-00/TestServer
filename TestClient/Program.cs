@@ -9,7 +9,7 @@ namespace ChatClient
     class Program
     {
         const string Address = "http://localhost:50051";
-
+        //50051
         public static async Task Main(string[] args)
         {
             using var channel = GrpcChannel.ForAddress(Address);
